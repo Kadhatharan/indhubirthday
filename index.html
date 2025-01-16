@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cakes&candle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/s2.css">
+    <link rel="stylesheet" href="CSS/s3.css">
+    <link rel="stylesheet" href="CSS/s4.css">
+    <link rel="stylesheet" href="CSS/s5.css">
+    <link rel="stylesheet" href="CSS/s6.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<style>
+    .containergallery {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .photo-gallery img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .photo-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .quote {
+            font-size: 1.5em;
+            margin-top: 30px;
+            font-style: italic;
+            margin-bottom: 50px;
+        }
+</style>
+
+<body>
+    <nav class="navbar1">
+        <div class="navbar-brand">
+            <img src="IMG/logo.jpg" alt="Logo" class="logo">
+            <span class="title">Party Palette</span>
+        </div>
+        <button class="nav-toggle" id="navToggle">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#section1">HOME</a></li>
+            <li><a href="#section2">B-DAY WISH</a></li>
+            <li><a href="#section3">GALLERY</a></li>
+            <li><a href="#section5">EMPTY GIFT BOX</a></li>
+            
+        </ul>
+    </nav>
+
+    <header id="section1" class="section birthday-intro">
+        <div class="intro-container">
+            <h1 class="main-title">
+                Happy Birthday INDHU <br>
+                <span id="animatedText" class="animated-text">My Love</span>!
+            </h1>
+            <p class="subtitle">Febery 6, 2025 — Celebrating 19 magical years of you!</p>
+            <div class="features">
+                <div class="feature-item animate-floating1">
+                    <i class="bi bi-heart-fill"></i>
+                    <h3>19 Years of Love</h3>
+                    <p>Your presence makes the my world brighter every day darling.</p>
+                </div>
+                <div class="feature-item animate-floating1">
+                    <i class="bi bi-gift-fill"></i>
+                    <h3>A Special Surprise</h3>
+                    <p>This website is a small token of my endless love for you.</p>
+                </div>
+                <div class="feature-item animate-floating1">
+                    <i class="bi bi-stars"></i>
+                    <h3>You’re a Star</h3>
+                    <p>Today, let’s celebrate all that makes you incredible.</p>
+                </div>
+            </div>
+             <!-- Interactive Dog Animation -->
+     
+
+           
+            <!-- Confetti Canvas -->
+<div id="confettiCanvas" class="confetti-canvas"></div>
+<!-- Video Element -->
+
+<!-- Audio Element -->
+
+        </div>
+
+
+        <div style="   display: flex;justify-content: center;align-items: center;margin: 0; ">
+            <div class="audio-container1" style="float: left;">
+                <div class="icon-qr-container">
+                <i class="fas fa-play play-icon" data-audio="audio2"></i>
+                <img src="spcode-0AnI9C9UTR2ujg3FCSrHls.jpeg" alt="Spotify QR Code" class="spotify-qr1">
+                </div>
+                <audio id="audio2" src="orumuraipiranthen.mp3"></audio>
+            
+            </div>
+        </div>
+    </header>
+    
+    <style>
+        
+/* Audio Icon Container */
+.audio-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    gap: 15px; /* Space between the icon and the QR code */
+}
+
+/* Play Icon Styles */
+.play-icon {
+    font-size: 154px;
+    color: #e91e63;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+/* Play Icon (default state) */
+.play-icon:before {
+    content: '\25B6'; /* Unicode for play icon (▶) */
+    transition: transform 0.3s ease;
+}
+
+/* Pause Icon Styles */
+.playing:before {
+    content: '\23F8'; /* Unicode for pause icon (⏸) */
+}
+
+/* QR Code */
+.spotify-qr {
+    width: 150px; /* Adjust size of QR code */
+    height: auto;
+}
+
+/* Optional: Hover effect on play icon */
+.play-icon:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+
+
+
+
+.audio-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all child elements horizontally */
+    margin-top: 10px; /* Space between image and audio container */
+}
+
+.audio-container1 .icon-qr-container {
+    display: flex;
+    align-items: center; /* Align icon and QR code vertically */
+    justify-content: center; /* Center icon and QR code horizontally */
+    gap: 10px; /* Space between icon and QR code */
+}
+
+.audio-container1 i {
+    font-size: 24px; /* Adjust icon size if needed */
+    cursor: pointer;
+}
+
+.audio-container1 audio {
+    margin: 10px 0; /* Space above and below the audio element */
+}
+
+.spotify-qr1 {
+    width: 200px; /* Adjust QR code size as needed */
+}
+    </style>
+
+    <section id="section2" class="section about-her">
+        <div class="container">
+            <div class="container1">
+                <h1>Live Age Counter</h1>
+                <div class="age-display">
+                    <div class="card" id="years-card">
+                        <p>Years</p>
+                        <span id="years">--</span>
+                    </div>
+                    <div class="card" id="months-card">
+                        <p>Months</p>
+                        <span id="months">--</span>
+                    </div>
+                    <div class="card" id="days-card">
+                        <p>Days</p>
+                        <span id="days">--</span>
+                    </div>
+                    <div class="card" id="hours-card">
+                        <p>Hours</p>
+                        <span id="hours">--</span>
+                    </div>
+                    <div class="card" id="minutes-card">
+                        <p>Minutes</p>
+                        <span id="minutes">--</span>
+                    </div>
+                    <div class="card" id="seconds-card">
+                        <p>Seconds</p>
+                        <span id="seconds">--</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="animated-text-container">
+                <p class="about-description">
+                    Iniya pirantha naal vaazhthukkal, Indhu! (இனிய பிறந்த நாள் வாழ்த்துகள், இந்து!), Many more happy returns of the day, Indhu! Baie geluk met jou verjaarsdag, Indhu! عيد ميلاد سعيد يا إنده! (Eid milad saeid ya Indhu!) শুভ জন্মদিন, ইন্ধু! (Shubho jonmodin, Indhu!) 印度，生日快乐！(Yìndù, shēngrì kuàilè!) Všechno nejlepší k narozeninám, Indhu! Tillykke med fødselsdagen, Indhu! Van harte gefeliciteerd, Indhu! Multajn feliĉajn revenojn de la tago, Indhu! Paljon onnea syntymäpäivänäsi, Indhu! Joyeux anniversaire, Indhu! Herzlichen Glückwunsch zum Geburtstag, Indhu! Χρόνια πολλά, Ίνδου! (Chrónia pollá, Indhu!) जन्मदिन की हार्दिक शुभकामनाएँ, इंधु! (Janmadin ki hardik shubhkamnayein, Indhu!) Boldog születésnapot, Indhu! Tanti auguri di buon compleanno, Indhu! インドさん、お誕生日おめでとうございます！(Indhu-san, otanjoubi omedetou gozaimasu!) Indhu, 생일 축하합니다! (Indhu, saengil chukahamnida!) ಹುಟ್ಟುಹಬ್ಬದ ಶುಭಾಶಯಗಳು, ಇಂದು! (Huttuhabbada shubhashayagalu, Indhu!)...    
+                </p>
+                <p class="about-description" style="text-align: left;">🌸 Happy Birthday, Indhu! 🌸 <br>
+
+                    Today, the world celebrates the incredible person you are—someone who radiates love, kindness, and warmth wherever she goes. You have a heart of gold, a soul full of grace, and a smile that brightens even the darkest days.
+                    
+                    Your love for family, especially your sisters' little ones, shows how deeply caring and selfless you are. They are so lucky to have an aunt like you, and I am beyond blessed to call you mine.
+                    
+                    On this special day, I wish you all the happiness your heart can hold, endless moments of laughter, and a lifetime of dreams coming true. You deserve every bit of joy the universe has to offer.
+                    
+                    May this year bring you closer to everything you’ve ever wished for and more. I promise to always be there, cheering for you, loving you, and celebrating every moment of your amazing journey.
+                    
+                    Here’s to you, my queen, my light, my everything. 💙✨ <br>
+                    <br>
+                    With all my love, <br>
+                    [KADHADHARAN]</p>
+            </div>
+    
+            <!-- Interactive Dog Animation -->
+            <div class="interactive-dog">
+                <div class="dog-container">
+                    <div class="dog-animation"></div>
+                </div>
+            </div>
+    
+            <div class="floating-heart"></div>
+            <div class="floating-heart-two"></div>
+
+             <!-- Add a container for bubbles -->
+        <div class="luxury-bubbles-container">
+            <!-- Bubbles will be dynamically added via CSS -->
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            
+        </div>
+    
+            <div class="cta-container">
+                <a href="#section3" class="btn btn-primary">Keep Exploring</a>
+            </div>
+        </div>
+
+
+
+    </section>
+    <script>
+       document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector('.luxury-bubbles-container');
+    const section = document.getElementById('section2');
+    const bubbleSizeRange = { min: 30, max: 60 }; // Bubble size range
+    const bubbleSpacing = 10; // Minimum spacing between bubbles
+
+    const sectionWidth = section.offsetWidth;
+    const sectionHeight = section.offsetHeight;
+
+    // Calculate number of bubbles based on section size
+    const horizontalBubbleCount = Math.ceil(sectionWidth / (bubbleSizeRange.max + bubbleSpacing));
+    const verticalBubbleCount = Math.ceil(sectionHeight / (bubbleSizeRange.max + bubbleSpacing));
+    const totalBubbleCount = horizontalBubbleCount * verticalBubbleCount;
+
+    // Function to check overlap
+    const placedBubbles = [];
+    function isOverlapping(x, y, size) {
+        return placedBubbles.some(
+            (bubble) =>
+                Math.abs(bubble.x - x) < (bubble.size + size + bubbleSpacing) / 2 &&
+                Math.abs(bubble.y - y) < (bubble.size + size + bubbleSpacing) / 2
+        );
+    }
+
+    // Create bubbles
+    for (let i = 0; i < totalBubbleCount; i++) {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+
+        let size, x, y;
+        let attempts = 0;
+        do {
+            size = Math.random() * (bubbleSizeRange.max - bubbleSizeRange.min) + bubbleSizeRange.min;
+            x = Math.random() * (sectionWidth - size);
+            y = Math.random() * (sectionHeight - size);
+            attempts++;
+        } while (isOverlapping(x, y, size) && attempts < 50);
+
+        if (attempts < 50) {
+            placedBubbles.push({ x, y, size });
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            bubble.style.left = `${x}px`;
+            bubble.style.top = `${y}px`;
+
+            // Add animation properties
+            const duration = Math.random() * 10 + 10; // Duration between 10-20 seconds
+            const delay = Math.random() * 5; // Delay between 0-5 seconds
+            bubble.style.animationDuration = `${duration}s`;
+            bubble.style.animationDelay = `${delay}s`;
+
+            container.appendChild(bubble);
+        }
+    }
+});
+
+
+    </script>
+    
+
+    <section id="section3" class="section">
+        <div class="containergallery">
+            <div class="quote">
+                "May your birthday be filled with love, laughter, and the joy of your favorite little ones!"
+            </div>
+    
+            <div class="photo-gallery">
+                <img src="IMG/canva4.jpeg" alt="Indhu and her nieces">
+                <img src="IMG/canva2.jpeg" alt="Happy memories">
+                <img src="IMG/canva3.jpeg" alt="Sisters' kids with Indhu">
+                <img src="IMG/canva1.jpeg" alt="Indhu and her nieces">
+                <img src="IMG/p1.jpeg" alt="Indhu and her nieces">
+                <img src="IMG/p2.jpeg" alt="Happy memories">
+                <img src="IMG/p3.jpeg" alt="Sisters' kids with Indhu">
+                <img src="IMG/p4.jpeg" alt="Indhu and her nieces">
+                <img src="IMG/p5.jpeg" alt="Happy memories">
+                <img src="IMG/p6.jpeg" alt="Sisters' kids with Indhu">
+                <img src="IMG/p7.jpeg" alt="Indhu and her nieces">
+                <img src="IMG/p8.jpeg" alt="Happy memories">
+                
+            </div>
+        </div>
+    
+        
+    </section>
+
+   
+
+    
+     <section id="section5" class="section5">
+   <!-- Floating Images Background -->
+   <div class="image-container">
+    <img src="IMG/gif.gif" alt="Floating Image 1" class="floating-image">
+    <img src="IMG/bearbow.gif" alt="Floating Image 2" class="floating-image">
+    <img src="IMG/fight.gif" alt="Floating Image 3" class="floating-image">
+    <img src="IMG/kisss.gif" alt="Floating Image 4" class="floating-image">
+    <img src="IMG/bearkiss.gif" alt="Floating Image 5" class="floating-image">
+    <img src="IMG/pinkblue.gif" alt="Floating Image 6" class="floating-image">
+    <img src="IMG/shyy.gif" alt="Floating Image 7" class="floating-image">
+    <img src="IMG/bearlove.gif" alt="Floating Image 8" class="floating-image">
+    <img src="IMG/bite.gif" alt="Floating Image 9" class="floating-image">
+    <img src="IMG/pinkbluekis.gif" alt="Floating Image 10" class="floating-image">
+    
+  </div>
+  <div class="s5title">
+    <h2>"An empty gift box speaks"</h2>
+    <h3>'I hold endless possibilities; the real gift lies in the love that fills me.'</h3>
+  </div>
+  <!-- Centered Image -->
+  <div class="image-wrapper">
+    <img class="center-image" src="Gift Box Explode.gif" alt="Center Image">
+    <div class="pulse-ring"></div>
+</div>
+
+  </section>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <footer class="footer">
+        <p style="font-size: x-large;">&copy; 2025 <a href="https://www.instagram.com/dharan_350?igsh=ODQ0NGs1c3lpaHVw"><i class="fa fa-instagram" style="font-size:36px; color: #ffffff; " >  </i></a></p>
+    </footer>
+    <script>
+      const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navbar = document.querySelector('.navbar');
+    let lastScrollY = window.scrollY;
+
+    // Toggle nav links on button click
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+
+    // Show or hide navbar on scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+            navbar.style.top = '-80px'; // Hide navbar when scrolling down
+        } else {
+            navbar.style.top = '0'; // Show navbar when scrolling up
+        }
+        lastScrollY = window.scrollY;
+
+        // Scroll Spy Logic - Highlight active link in navbar
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        sections.forEach((section, index) => {
+            const rect = section.getBoundingClientRect();
+            const link = navLinks[index];
+
+            if (rect.top <= 0 && rect.bottom >= 0) {
+                // Section is in view, highlight corresponding navbar link
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    });
+
+
+    </script>
+    <script src="script.js"></script>
+    <script>
+        // Detect scroll event to add/remove 'scrolled' class
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const celebrateButton = document.getElementById('celebrateButton');
+    const confettiCanvas = document.getElementById('confettiCanvas');
+    const birthdayContainer = document.getElementById('birthdayContainer');
+    const birthdayVideo = document.getElementById('birthdayVideo');
+    const birthdayAudio = document.getElementById('birthdayAudio');
+
+    celebrateButton.addEventListener('click', () => {
+        // Reset and Start Confetti
+        clearConfetti();
+        launchConfetti();
+
+        // Show and Play Video
+        resetAnimation(birthdayContainer);
+        birthdayContainer.style.display = 'block';
+        if (birthdayVideo) {
+            birthdayVideo.currentTime = 0; // Reset to start
+            birthdayVideo.play();
+
+            // Hide the video automatically after 5 seconds
+            setTimeout(() => {
+                birthdayContainer.style.display = 'none'; // Hide the container
+                birthdayVideo.pause(); // Pause the video if still playing
+            }, 5000);
+        }
+
+        // Play Birthday Audio
+        if (birthdayAudio) {
+            birthdayAudio.currentTime = 0; // Reset to start
+            birthdayAudio.play();
+        }
+    });
+
+    // Generate confetti
+    const launchConfetti = () => {
+        const numberOfConfetti = 150;
+        for (let i = 0; i < numberOfConfetti; i++) {
+            createConfetti();
+        }
+    };
+
+    const createConfetti = () => {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        confetti.style.left = `${Math.random() * 100}vw`;
+        confetti.style.animationDuration = `${Math.random() * 3 + 2}s`; // Random duration between 2-5 seconds
+        confetti.style.backgroundColor = getRandomColor();
+        confettiCanvas.appendChild(confetti);
+
+        // Remove confetti after animation ends
+        confetti.addEventListener('animationend', () => {
+            confetti.remove();
+        });
+    };
+
+    // Clear existing confetti
+    const clearConfetti = () => {
+        confettiCanvas.innerHTML = ''; // Clear previous confetti
+    };
+
+    // Random color generator
+    const getRandomColor = () => {
+        const colors = ['#FF6347', '#FFD700', '#32CD32', '#1E90FF', '#FF69B4', '#FFA07A', '#9400D3'];
+        return colors[Math.floor(Math.random() * colors.length)];
+    };
+
+    // Reset animations
+    const resetAnimation = (element) => {
+        // Force reflow to restart the animation
+        element.style.animation = 'none';
+        element.offsetHeight; // Trigger reflow
+        element.style.animation = '';
+    };
+});
+
+
+    </script>
+
+
+<script>
+    function showMessage(messageId) {
+        // Hide all messages
+        const messages = document.querySelectorAll('.friend-message');
+        messages.forEach(msg => msg.style.display = 'none');
+
+        // Display the selected message
+        const selectedMessage = document.getElementById(messageId);
+        if (selectedMessage) {
+            selectedMessage.style.display = 'block';
+        }
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const dob = new Date("2006-02-06T00:00:00"); // Fixed birthdate: January 4, 2005
+    const yearsElem = document.getElementById("years");
+    const monthsElem = document.getElementById("months");
+    const daysElem = document.getElementById("days");
+    const hoursElem = document.getElementById("hours");
+    const minutesElem = document.getElementById("minutes");
+    const secondsElem = document.getElementById("seconds");
+
+    // Function to calculate and update age
+    function updateAge() {
+        const now = new Date();
+        const age = calculateAge(dob, now);
+
+        yearsElem.textContent = age.years;
+        monthsElem.textContent = age.months;
+        daysElem.textContent = age.days;
+        hoursElem.textContent = age.hours;
+        minutesElem.textContent = age.minutes;
+        secondsElem.textContent = age.seconds;
+    }
+
+    // Function to calculate precise age
+    function calculateAge(dob, now) {
+        let years = now.getFullYear() - dob.getFullYear();
+        let months = now.getMonth() - dob.getMonth();
+        let days = now.getDate() - dob.getDate();
+        let hours = now.getHours() - dob.getHours();
+        let minutes = now.getMinutes() - dob.getMinutes();
+        let seconds = now.getSeconds() - dob.getSeconds();
+
+        if (seconds < 0) {
+            minutes--;
+            seconds += 60;
+        }
+        if (minutes < 0) {
+            hours--;
+            minutes += 60;
+        }
+        if (hours < 0) {
+            days--;
+            hours += 24;
+        }
+        if (days < 0) {
+            months--;
+            days += new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+        }
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        return { years, months, days, hours, minutes, seconds };
+    }
+
+    // Update age every second
+    setInterval(updateAge, 1000);
+});
+
+
+</script>
+
+<script>
+    
+
+</script>
+
+<script>
+    // Select all play/pause icons
+    const playIcons = document.querySelectorAll('.play-icon');
+    
+    // Add event listeners to each play icon
+    playIcons.forEach((icon) => {
+        const audioId = icon.getAttribute('data-audio'); // Get the associated audio ID
+        const audioElement = document.getElementById(audioId); // Get the corresponding audio element
+    
+        icon.addEventListener('click', () => {
+            // Pause any currently playing audio
+            playIcons.forEach((otherIcon) => {
+                const otherAudioId = otherIcon.getAttribute('data-audio');
+                const otherAudio = document.getElementById(otherAudioId);
+                if (otherAudio !== audioElement && !otherAudio.paused) {
+                    otherAudio.pause();
+                    otherAudio.currentTime = 0;
+                    otherIcon.classList.remove('playing');
+                    otherIcon.classList.add('stopped');
+                }
+            });
+    
+            if (audioElement.paused) {
+                // Play the associated audio
+                audioElement.play();
+                icon.classList.add('playing'); // Change icon to pause
+                icon.classList.remove('stopped'); // Ensure it’s not in stopped state
+            } else {
+                // Stop the audio completely
+                audioElement.pause();
+                audioElement.currentTime = 0;
+                icon.classList.remove('playing'); // Change icon to play
+                icon.classList.add('stopped');
+            }
+        });
+    
+        // Reset icon when audio ends
+        audioElement.addEventListener('ended', () => {
+            icon.classList.remove('playing'); // Reset to play icon
+            icon.classList.add('stopped');
+        });
+    });
+    
+    
+        </script>
+    
+</body>
+</html>
